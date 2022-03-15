@@ -1,26 +1,28 @@
 <article{{ attributes }} class="site-content">
 
-
+{# Hero #}
+<div class="hero">
   {% if content.field_subtitle_1 %} 
     {{ content.field_subtitle_1 }}
   {% endif %}
 
   {% if label %}
-    <h1{{ title_attributes }} class="site-content__title" >
+    <h1{{ title_attributes }} class="hero__title" >
      {{ label }}
     </h1>
   {% endif %}
 
   {% if content.field_hero_image %} 
-    {# {{ content.field_hero_image }} #}
+    {{ content.field_hero_image }}
   {% endif %}
 
   {% if content.field_subtitle_2 %} 
     {{ content.field_subtitle_2 }}
   {% endif %}
+</div>
 
   {% if content.field_image_with_text %} 
-    {{ content.field_image_with_text }}
+    {# {{ content.field_image_with_text }} #}
   {% endif %}
 
   {% if content.field_map_title %} 
@@ -28,7 +30,7 @@
   {% endif %}
   
   {% if content.field_map %} 
-    {{ content.field_map }}
+    {# {{ content.field_map }} #}
   {% endif %}
   {% if content.field_email %} 
     {{ content.field_email }}

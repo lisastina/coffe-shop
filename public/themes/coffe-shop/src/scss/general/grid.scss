@@ -10,7 +10,7 @@
 
 @use '../variables/responsive';
 
-@use 'bootstrap/scss/bootstrap-grid' with (
+@forward 'bootstrap/scss/bootstrap-grid' with (
   $container-max-widths: (
     tablet: 568px,
     tablet-landscape: 858px,
