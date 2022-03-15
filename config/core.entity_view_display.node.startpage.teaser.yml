@@ -1,0 +1,39 @@
+uuid: f96549f5-7df9-4d89-9cfc-0b605f2523e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.startpage.field_address
+    - field.field.node.startpage.field_email
+    - field.field.node.startpage.field_hero_image
+    - field.field.node.startpage.field_image_with_text
+    - field.field.node.startpage.field_map
+    - field.field.node.startpage.field_map_title
+    - field.field.node.startpage.field_phone
+    - field.field.node.startpage.field_subtitle_1
+    - field.field.node.startpage.field_subtitle_2
+    - node.type.startpage
+  module:
+    - user
+id: node.startpage.teaser
+targetEntityType: node
+bundle: startpage
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_address: true
+  field_email: true
+  field_hero_image: true
+  field_image_with_text: true
+  field_map: true
+  field_map_title: true
+  field_phone: true
+  field_subtitle_1: true
+  field_subtitle_2: true
+  langcode: true

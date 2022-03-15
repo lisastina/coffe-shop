@@ -1,0 +1,31 @@
+uuid: bcb86d37-b16e-440a-a67a-283ea5678de9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_with_text
+    - node.type.startpage
+    - paragraphs.paragraphs_type.image_with_text
+  module:
+    - entity_reference_revisions
+id: node.startpage.field_image_with_text
+field_name: field_image_with_text
+entity_type: node
+bundle: startpage
+label: 'Image with text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image_with_text: image_with_text
+    negate: 0
+    target_bundles_drag_drop:
+      image_with_text:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions
