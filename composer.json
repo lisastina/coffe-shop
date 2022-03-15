@@ -19,9 +19,11 @@
     },
     "require": {
         "composer/installers": "^1.0",
+        "drupal/address": "^1.10",
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-project-message": "^9.0",
         "drupal/core-recommended": "^9.0",
+        "drupal/paragraphs": "^1.13",
         "oddhill/oddprofile": "^2.0",
         "vlucas/phpdotenv": "^5.0"
     },

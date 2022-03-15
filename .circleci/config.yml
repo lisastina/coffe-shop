@@ -13,7 +13,7 @@ version: 2.1
 parameters:
   theme-directory:
     type: string
-    default: ./public/themes/oddbaby
+    default: ./public/themes/coffeshop
 
 ##
 # Orbs
@@ -50,7 +50,7 @@ commands:
           reason.
         type: string
       theme-name:
-        default: oddbaby
+        default: coffeshop
         type: string
     steps:
       - node/install-packages:

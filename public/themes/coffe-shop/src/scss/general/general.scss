@@ -1,0 +1,42 @@
+// General styling
+
+@use '../variables.scss';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  color: variables.$font-color;
+  font-family: variables.$font-family;
+  font-size: variables.$font-size;
+  font-weight: variables.$font-weight;
+  background-color: variables.$beige;
+  font-family: 'felt tip woman', sans-serif;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'chelsea market open';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
