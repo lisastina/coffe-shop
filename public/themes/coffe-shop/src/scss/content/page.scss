@@ -25,9 +25,9 @@
     color: variables.$blue;
     font-size: 1.5rem;
 
-    @include grid.media-breakpoint-up(tablet-landscape) {
+    /* @include grid.media-breakpoint-up(tablet-landscape) {
       font-size: 2rem;
-    }
+    } */
   }
   &__image {
     max-width: 600px;

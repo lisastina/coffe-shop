@@ -1,29 +1,35 @@
-<article{{ attributes }} class="site-content">
+<article{{ attributes }} >
 
 {# Hero #}
-<div class="hero">
-  {% if content.field_subtitle_1 %} 
-    {{ content.field_subtitle_1 }}
-  {% endif %}
+<div class="content"> 
+  <div class="hero">
+    {% if content.field_subtitle_1 %} 
+      {{ content.field_subtitle_1 }}
+    {% endif %}
 
-  {% if label %}
-    <h1{{ title_attributes }} class="hero__title" >
-     {{ label }}
-    </h1>
-  {% endif %}
+    {% if label %}
+      <h1{{ title_attributes }} class="hero__title" >
+      {{ label }}
+      </h1>
+    {% endif %}
 
-  {% if content.field_hero_image %} 
-    {{ content.field_hero_image }}
-  {% endif %}
+    {% if content.field_hero_image %} 
+      {{ content.field_hero_image }}
+    {% endif %}
 
-  {% if content.field_subtitle_2 %} 
-    {{ content.field_subtitle_2 }}
-  {% endif %}
+    {% if content.field_subtitle_2 %} 
+      {{ content.field_subtitle_2 }}
+    {% endif %}
+  </div>
 </div>
 
   {% if content.field_image_with_text %} 
-    {# {{ content.field_image_with_text }} #}
+  <div class="wide-content">
+    {{ content.field_image_with_text }}
+  </div>
   {% endif %}
+
+<div class="site-content"> 
 
   {% if content.field_map_title %} 
     {{ content.field_map_title }}
@@ -41,6 +47,8 @@
   {% if content.field_address %} 
     {{ content.field_address }}
   {% endif %}
+</div>
+
 
 
   
