@@ -49,8 +49,12 @@
   }
 
   &__title {
-    font-size: 2rem;
     color: variables.$blue;
-    font-family: 'Chelsea market open', sans-serif;
+    font-family: variables.$title-font;
+    font-size: 1.5rem;
+
+    @include grid.media-breakpoint-up(tablet-landscape) {
+      font-size: 2rem;
+    }
   }
 }

@@ -23,36 +23,52 @@
   </div>
 </div>
 
+{# Image with text 1 #}
   {% if content.field_image_with_text %} 
   <div class="wide-content first">
     {{ content.field_image_with_text.0 }}
   </div>
   {% endif %}
 
+  {# Menu #}
 
+
+{# Image with text 2 #}
   {% if content.field_image_with_text %} 
   <div class="wide-content">
     {{ content.field_image_with_text.1 }}
   </div>
   {% endif %}
 
-<div class="content"> 
-  {% if content.field_map_title %} 
-    {{ content.field_map_title }}
-  {% endif %}
-  
-  {% if content.field_map %} 
-    {# {{ content.field_map }} #}
-  {% endif %}
-  {% if content.field_email %} 
-    {{ content.field_email }}
-  {% endif %}
-  {% if content.field_phone %} 
-    {{ content.field_phone }}
-  {% endif %}
-  {% if content.field_address %} 
-    {{ content.field_address }}
-  {% endif %}
+
+{# Contact info #}
+<div class="content contact"> 
+  <div class="map">
+    {% if content.field_map_title %} 
+      {{ content.field_map_title }}
+    {% endif %}
+    
+    {% if content.field_map %} 
+      {{ content.field_map }}
+    {% endif %}
+  </div>
+  <div class="contact-info">
+    {% if content.field_address_title %} 
+      {{ content.field_address_title }}
+    {% endif %}
+
+    {% if content.field_email %} 
+      {{ content.field_email }}
+    {% endif %}
+
+    {% if content.field_phone %} 
+      {{ content.field_phone }}
+    {% endif %}
+    
+    {% if content.field_address %} 
+      {{ content.field_address }}
+    {% endif %}
+  </div>
 </div>
 
 

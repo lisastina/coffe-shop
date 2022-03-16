@@ -1,6 +1,7 @@
 // General styling
 
 @use '../variables.scss';
+@use '../general/grid.scss' as grid;
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -14,21 +15,19 @@ body {
   font-size: variables.$font-size;
   font-weight: variables.$font-weight;
   background-color: variables.$beige;
-  font-family: 'felt tip woman', sans-serif;
+  font-family: variables.$font-family;
 }
 
 a,
-a:visited {
-  text-decoration: none;
-}
-
+a:visited,
 a:active,
 a:hover {
   text-decoration: none;
+  color: variables.$brown;
 }
 
 h1 {
-  font-family: 'chelsea market open';
+  font-family: variables.$title-font;
 }
 
 h1,

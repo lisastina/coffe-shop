@@ -1,0 +1,5 @@
+{% if items %}
+  {% for item in items %}
+    <h2{{ attributes }} class="contact__title">{{ item.content }}</h2>
+  {% endfor %}
+{% endif %}
