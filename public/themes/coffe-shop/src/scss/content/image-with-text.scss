@@ -1,16 +1,24 @@
 @use '../general/grid.scss' as grid;
 @use '../variables.scss';
 
+.first .image-with-text {
+  flex-direction: column;
+
+  @include grid.media-breakpoint-up(tablet) {
+    flex-direction: row;
+  }
+}
+
 .image-with-text {
   max-width: 872px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   margin: 0 2rem;
   gap: 2.5rem;
 
   @include grid.media-breakpoint-up(tablet) {
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin: 0 4rem;
   }
 

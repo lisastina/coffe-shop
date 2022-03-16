@@ -24,13 +24,19 @@
 </div>
 
   {% if content.field_image_with_text %} 
-  <div class="wide-content">
-    {{ content.field_image_with_text }}
+  <div class="wide-content first">
+    {{ content.field_image_with_text.0 }}
   </div>
   {% endif %}
 
-<div class="site-content"> 
 
+  {% if content.field_image_with_text %} 
+  <div class="wide-content">
+    {{ content.field_image_with_text.1 }}
+  </div>
+  {% endif %}
+
+<div class="content"> 
   {% if content.field_map_title %} 
     {{ content.field_map_title }}
   {% endif %}
