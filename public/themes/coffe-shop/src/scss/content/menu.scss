@@ -7,24 +7,30 @@
   align-items: center;
   gap: 2rem;
   background-color: #fff;
-  margin: 2rem;
-  padding: 2rem;
-  max-width: 700px;
+  margin: 1.5rem;
+  padding: 1.8rem;
+  max-width: 600px;
 
-  @include grid.media-breakpoint-up(tablet) {
+  @include grid.media-breakpoint-up(tablet-landscape) {
     margin: 4rem;
     padding: 3.5rem;
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: map-get(variables.$font-family, chelsea-open);
     color: variables.$blue;
     background-color: #fff;
-    padding: 0 1.2rem;
+    padding: 0 0.8rem;
     position: absolute;
-    top: -25px;
+    top: -18px;
     left: 10px;
+
+    @include grid.media-breakpoint-up(tablet-landscape) {
+      font-size: 2rem;
+      padding: 0 1.2rem;
+      top: -25px;
+    }
   }
 
   &__image {
@@ -38,8 +44,14 @@
 
   &__border {
     position: relative;
-    padding: 4.5rem;
+    padding: 1.8rem;
     border: 2px solid variables.$blue;
+    width: 100%;
+    box-sizing: border-box;
+
+    @include grid.media-breakpoint-up(tablet) {
+      padding: 4rem;
+    }
   }
 
   &__items {
@@ -53,38 +65,60 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 0.8rem;
   color: variables.$blue;
   align-items: center;
+
+  @include grid.media-breakpoint-up(tablet-landscape) {
+    gap: 2rem;
+  }
 
   &__image-and-desc {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
+
+    @include grid.media-breakpoint-up(tablet-landscape) {
+      gap: 2rem;
+    }
   }
 
   &__text {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.2rem;
+
+    @include grid.media-breakpoint-up(tablet-landscape) {
+      gap: 0.5rem;
+    }
   }
 
   &__title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+
+    @include grid.media-breakpoint-up(tablet-landscape) {
+      font-size: 1.5rem;
+    }
   }
 
   &__desc {
-    font-size: 1.3rem;
+    font-size: 1rem;
+
+    @include grid.media-breakpoint-up(tablet-landscape) {
+      font-size: 1.3rem;
+    }
   }
 
   &__image {
-    max-width: 100px;
     width: 100%;
-    max-height: 100px;
-    height: 100%;
-
+    max-width: 45px;
+    min-width: 45px;
     aspect-ratio: 1 / 1;
+
+    @include grid.media-breakpoint-up(tablet-landscape) {
+      max-width: 70px;
+    }
 
     img {
       width: 100%;
@@ -94,7 +128,11 @@
   }
 
   &__price {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: map-get(variables.$font-family, chelsea-pro);
+
+    @include grid.media-breakpoint-up(tablet-landscape) {
+      font-size: 1.5rem;
+    }
   }
 }

@@ -1,6 +1,18 @@
 @use '../variables.scss';
 @use '../general/grid.scss' as grid;
 
+.nav {
+  margin: 2rem 0 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  a {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}
+
 .hero {
   background-color: #fff;
   display: flex;

@@ -1,31 +1,38 @@
 <article{{ attributes }} >
 
-{# Hero #}
-<div class="content"> 
-  <div class="hero">
-    {% if content.field_subtitle_1 %} 
-      {{ content.field_subtitle_1 }}
-    {% endif %}
-
-    {% if label %}
-      <h1{{ title_attributes }} class="hero__title" >
-      {{ label }}
-      </h1>
-    {% endif %}
-
-    {% if content.field_hero_image %} 
-      {{ content.field_hero_image }}
-    {% endif %}
-
-    {% if content.field_subtitle_2 %} 
-      {{ content.field_subtitle_2 }}
-    {% endif %}
+{# navigation #}
+  <div class="content"> 
+  <div class="nav">
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </div>
-</div>
+
+{# Hero #}
+    <div class="hero">
+      {% if content.field_subtitle_1 %} 
+        {{ content.field_subtitle_1 }}
+      {% endif %}
+
+      {% if label %}
+        <h1{{ title_attributes }} class="hero__title" >
+        {{ label }}
+        </h1>
+      {% endif %}
+
+      {% if content.field_hero_image %} 
+        {{ content.field_hero_image }}
+      {% endif %}
+
+      {% if content.field_subtitle_2 %} 
+        {{ content.field_subtitle_2 }}
+      {% endif %}
+    </div>
+  </div>
 
 {# Image with text 1 #}
   {% if content.field_image_with_text %} 
-  <div class="wide-content first">
+  <div class="wide-content first" id="about">
     {{ content.field_image_with_text.0 }}
   </div>
   {% endif %}
@@ -48,41 +55,37 @@
 
 
 {# Contact info #}
-<div class="content contact"> 
-  <div class="map">
-    {% if content.field_map_title %} 
-      {{ content.field_map_title }}
-    {% endif %}
-    
-    {% if content.field_map %} 
-      {{ content.field_map }}
-    {% endif %}
-  </div>
-  <div class="contact-info">
-    {% if content.field_address_title %} 
-      {{ content.field_address_title }}
-    {% endif %}
+  <div class="content"> 
+    <div class="contact" id="contact">
+      <div class="map">
+        {% if content.field_map_title %} 
+          {{ content.field_map_title }}
+        {% endif %}
+        
+        {% if content.field_map %} 
+          {{ content.field_map }}
+        {% endif %}
+      </div>
+      <div>
+        {% if content.field_address_title %} 
+          {{ content.field_address_title }}
+        {% endif %}
 
-    {% if content.field_email %} 
-      {{ content.field_email }}
-    {% endif %}
+        <div class="contact-info">
+          {% if content.field_email %} 
+            {{ content.field_email }}
+          {% endif %}
 
-    {% if content.field_phone %} 
-      {{ content.field_phone }}
-    {% endif %}
-    
-    {% if content.field_address %} 
-      {{ content.field_address }}
-    {% endif %}
-  </div>
-</div>
-
-
-
-  
-
-  <div{{ content_attributes }}>
-    
+          {% if content.field_phone %} 
+            {{ content.field_phone }}
+          {% endif %}
+          
+          {% if content.field_address %} 
+            {{ content.field_address }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
   </div>
 
 </article>
