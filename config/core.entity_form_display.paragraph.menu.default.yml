@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.menu.field_menu_image
+    - field.field.paragraph.menu.field_menu_title
     - field.field.paragraph.menu.field_product
     - image.style.thumbnail
     - paragraphs.paragraphs_type.menu
@@ -17,15 +18,23 @@ mode: default
 content:
   field_menu_image:
     type: image_image
-    weight: 0
+    weight: 1
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  field_menu_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_product:
     type: paragraphs
-    weight: 1
+    weight: 2
     region: content
     settings:
       title: Paragraph
