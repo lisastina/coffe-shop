@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.startpage.field_image_with_text
     - field.field.node.startpage.field_map
     - field.field.node.startpage.field_map_title
+    - field.field.node.startpage.field_menu
     - field.field.node.startpage.field_phone
     - field.field.node.startpage.field_subtitle_1
     - field.field.node.startpage.field_subtitle_2
@@ -81,6 +82,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 105
+    region: content
+  field_menu:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 111
     region: content
   field_phone:
     type: link

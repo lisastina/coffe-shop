@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.startpage.field_image_with_text
     - field.field.node.startpage.field_map
     - field.field.node.startpage.field_map_title
+    - field.field.node.startpage.field_menu
     - field.field.node.startpage.field_phone
     - field.field.node.startpage.field_subtitle_1
     - field.field.node.startpage.field_subtitle_2
@@ -27,13 +28,13 @@ mode: default
 content:
   field_address:
     type: address_default
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   field_address_title:
     type: string_textfield
-    weight: 8
+    weight: 9
     region: content
     settings:
       size: 60
@@ -41,7 +42,7 @@ content:
     third_party_settings: {  }
   field_email:
     type: email_default
-    weight: 10
+    weight: 11
     region: content
     settings:
       placeholder: ''
@@ -75,7 +76,7 @@ content:
     third_party_settings: {  }
   field_map:
     type: image_image
-    weight: 7
+    weight: 8
     region: content
     settings:
       progress_indicator: throbber
@@ -83,15 +84,33 @@ content:
     third_party_settings: {  }
   field_map_title:
     type: string_textfield
-    weight: 6
+    weight: 7
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_menu:
+    type: paragraphs
+    weight: 6
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
   field_phone:
     type: link_default
-    weight: 11
+    weight: 12
     region: content
     settings:
       placeholder_url: ''
@@ -115,7 +134,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 12
+    weight: 13
     region: content
     settings:
       display_label: true

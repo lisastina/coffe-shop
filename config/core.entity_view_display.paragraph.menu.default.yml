@@ -1,0 +1,35 @@
+uuid: 7603d5db-0233-4f5c-9238-ec53cf555722
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.menu.field_menu_image
+    - field.field.paragraph.menu.field_product
+    - paragraphs.paragraphs_type.menu
+  module:
+    - entity_reference_revisions
+    - image
+id: paragraph.menu.default
+targetEntityType: paragraph
+bundle: menu
+mode: default
+content:
+  field_menu_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_product:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

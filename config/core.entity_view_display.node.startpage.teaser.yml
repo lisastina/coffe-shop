@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.startpage.field_image_with_text
     - field.field.node.startpage.field_map
     - field.field.node.startpage.field_map_title
+    - field.field.node.startpage.field_menu
     - field.field.node.startpage.field_phone
     - field.field.node.startpage.field_subtitle_1
     - field.field.node.startpage.field_subtitle_2
@@ -35,6 +36,7 @@ hidden:
   field_image_with_text: true
   field_map: true
   field_map_title: true
+  field_menu: true
   field_phone: true
   field_subtitle_1: true
   field_subtitle_2: true
