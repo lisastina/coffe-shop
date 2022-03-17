@@ -64,3 +64,20 @@ p {
     margin-bottom: 4rem;
   }
 }
+
+.contact,
+.wide-content,
+.menu {
+  position: relative;
+}
+
+#about,
+#contact,
+#menu {
+  position: absolute;
+  top: -10px;
+
+  @include grid.media-breakpoint-up(tablet-landscape) {
+    top: -50px;
+  }
+}

@@ -31,7 +31,8 @@
   </div>
 
 {# Image with text 1 #}
-    <div class="wide-content" id="about">
+    <div class="wide-content"{#  id="about" #}>
+    <span id="about"></span>
   {% if content.field_image_with_text %} 
       {{ content.field_image_with_text.0 }}
   {% endif %}
@@ -61,7 +62,8 @@
 
 {# Contact info #}
   <div class="content"> 
-    <div class="contact" id="contact">
+    <div class="contact" {# id="contact" #}>
+    <span id="contact"></span>
       <div class="map">
         {% if content.field_map_title %} 
           {{ content.field_map_title }}
