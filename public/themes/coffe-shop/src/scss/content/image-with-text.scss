@@ -50,7 +50,7 @@
 
   &__title {
     color: variables.$blue;
-    font-family: variables.$title-font;
+    font-family: map-get(variables.$font-family, chelsea-open);
     font-size: 1.5rem;
 
     @include grid.media-breakpoint-up(tablet-landscape) {

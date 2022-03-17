@@ -15,7 +15,7 @@
 
   h1 {
     font-size: 2rem;
-    margin: 1.3rem 0 2rem 0;
+    margin: 1.3rem 0 0.5rem 0;
     text-align: center;
 
     @include grid.media-breakpoint-up(tablet-landscape) {
@@ -28,7 +28,7 @@
   }
   &__image {
     max-width: 600px;
-    width: 130%;
+    width: 100%;
     margin-bottom: 1.3rem;
 
     @include grid.media-breakpoint-up(tablet) {
