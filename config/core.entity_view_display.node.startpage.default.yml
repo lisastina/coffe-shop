@@ -17,6 +17,7 @@ dependencies:
     - node.type.startpage
   module:
     - address
+    - address_map_link
     - entity_reference_revisions
     - image
     - link
@@ -30,7 +31,13 @@ content:
     type: address_default
     label: above
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      address_map_link:
+        link_address: '1'
+        map_link_type: google_maps
+        map_link_position: address
+        map_link_text: ''
+        map_link_new_window: 0
     weight: 107
     region: content
   field_address_title:

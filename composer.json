@@ -20,6 +20,7 @@
     "require": {
         "composer/installers": "^1.0",
         "drupal/address": "^1.10",
+        "drupal/address_map_link": "^1.2",
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-project-message": "^9.0",
         "drupal/core-recommended": "^9.0",
