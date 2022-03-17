@@ -1,25 +1,26 @@
 @use '../general/grid.scss' as grid;
 @use '../variables.scss';
 
-.first .image-with-text {
-  flex-direction: column;
+.reverse .image-with-text {
+  margin-top: 0;
 
   @include grid.media-breakpoint-up(tablet) {
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 }
 
 .image-with-text {
   max-width: 872px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
-  margin: 0 2rem;
+  // margin: 0 2rem;
   gap: 2.5rem;
+  margin: 4rem 4rem;
 
   @include grid.media-breakpoint-up(tablet) {
-    flex-direction: row-reverse;
-    margin: 0 4rem;
+    flex-direction: row;
+    // margin: 0 4rem;
   }
 
   &__image {

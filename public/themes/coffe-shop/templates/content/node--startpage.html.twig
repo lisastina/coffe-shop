@@ -31,11 +31,16 @@
   </div>
 
 {# Image with text 1 #}
+    <div class="wide-content" id="about">
   {% if content.field_image_with_text %} 
-  <div class="wide-content first" id="about">
-    {{ content.field_image_with_text.0 }}
-  </div>
+      {{ content.field_image_with_text.0 }}
   {% endif %}
+  {% if content.field_image_with_text.1 %} 
+    <div class="reverse">
+      {{ content.field_image_with_text.1 }}
+    </div>
+  {% endif %}
+    </div>
 
 {# Menu #}
   <div class="content">
@@ -47,9 +52,9 @@
 
 {# Image with text 2 #}
 
-  {% if content.field_image_with_text %} 
+  {% if content.field_image_with_text.2 %} 
   <div class="wide-content">
-    {{ content.field_image_with_text.1 }}
+    {{ content.field_image_with_text.2 }}
   </div>
   {% endif %}
 
