@@ -30,15 +30,20 @@
   </div>
   {% endif %}
 
-  {# Menu #}
+{# Menu #}
+  {% if content.field_menu %}
+    {{ content.field_menu }}
+  {% endif %}
 
 
 {# Image with text 2 #}
-  {% if content.field_image_with_text %} 
-  <div class="wide-content">
-    {{ content.field_image_with_text.1 }}
+  <div class="content">
+    {% if content.field_image_with_text %} 
+    <div class="wide-content">
+      {{ content.field_image_with_text.1 }}
+    </div>
+    {% endif %}
   </div>
-  {% endif %}
 
 
 {# Contact info #}

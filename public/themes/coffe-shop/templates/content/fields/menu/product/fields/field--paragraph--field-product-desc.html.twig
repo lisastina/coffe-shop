@@ -1,0 +1,5 @@
+{% if items %}
+  {% for item in items %}
+    <p{{ attributes }} class="menu-item__desc">{{ item.content }}</p>
+  {% endfor %}
+{% endif %}
