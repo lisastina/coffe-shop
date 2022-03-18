@@ -1,8 +1,58 @@
+{% set bean_1_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-1.png'
+]|join('/') %}
+
+{% set bean_2_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-2.png'
+]|join('/') %}
+{% set bean_3_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-3.png'
+]|join('/') %}
+{% set bean_4_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-4.png'
+]|join('/') %}
+
+
+      
+
 <article{{ attributes }} >
 
 {# Hero #}
   <div class="content"> 
     <div class="hero">
+
+      <div class="bean hero__bean-1">
+        <img src="{{ bean_1_path }}" alt="coffe bean">
+      </div>
+
+      <div class="bean hero__bean-2">
+        <img src="{{ bean_2_path }}" alt="coffe bean">
+      </div>
+
+      <div class="bean hero__bean-3">
+        <img src="{{ bean_3_path }}" alt="coffe bean">
+      </div>
+
+      <div class="bean hero__bean-4">
+        <img src="{{ bean_2_path }}" alt="coffe bean">
+      </div>
+
+      <div class="bean hero__bean-5">
+        <img src="{{ bean_3_path }}" alt="coffe bean">
+      </div>
+
+      <div class="bean hero__bean-6">
+        <img src="{{ bean_4_path }}" alt="coffe bean">
+      </div>
+
       {% if content.field_subtitle_1 %} 
         {{ content.field_subtitle_1 }}
       {% endif %}
