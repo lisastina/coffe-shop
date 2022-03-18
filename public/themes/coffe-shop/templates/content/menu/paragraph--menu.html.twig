@@ -1,7 +1,33 @@
+{% set bean_1_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-1.png'
+]|join('/') %}
+{% set bean_2_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-2.png'
+]|join('/') %}
+{% set bean_3_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-4.png'
+]|join('/') %}
 
 {% block paragraph %}
   <div{{ attributes }} class="menu">
-  <span id="menu"></span>
+    <span id="menu"></span>
+
+    <div class="bean menu__bean-1"> 
+      <img src="{{ bean_1_path }}" alt="coffe bean">
+    </div>
+    <div class="bean menu__bean-2"> 
+      <img src="{{ bean_2_path }}" alt="coffe bean">
+    </div>
+    <div class="bean menu__bean-3"> 
+      <img src="{{ bean_3_path }}" alt="coffe bean">
+    </div>
+
     {% if content.field_menu_image %}
       {{ content.field_menu_image }}
     {% endif %}

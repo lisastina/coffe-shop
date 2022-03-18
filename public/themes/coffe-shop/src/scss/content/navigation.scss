@@ -1,4 +1,5 @@
 @use '../variables.scss';
+@use '../general/grid.scss' as grid;
 
 .nav {
   margin: 2rem auto 0;
@@ -15,5 +16,9 @@
   a {
     font-size: 1.3rem;
     font-weight: 700;
+
+    @include grid.media-breakpoint-up(tablet-landscape) {
+      font-size: 1.5rem;
+    }
   }
 }

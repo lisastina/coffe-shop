@@ -3,7 +3,6 @@
   active_theme_path(),
   'src/assets/graphics/bean-1.png'
 ]|join('/') %}
-
 {% set bean_2_path = [
   url('<front>')|render|trim('/', 'right'),
   active_theme_path(),
@@ -29,27 +28,23 @@
   <div class="content"> 
     <div class="hero">
 
+      {# Beans #}
       <div class="bean hero__bean-1">
         <img src="{{ bean_1_path }}" alt="coffe bean">
       </div>
-
       <div class="bean hero__bean-2">
         <img src="{{ bean_2_path }}" alt="coffe bean">
       </div>
-
-      <div class="bean hero__bean-3">
+{#       <div class="bean hero__bean-3">
         <img src="{{ bean_3_path }}" alt="coffe bean">
-      </div>
-
-      <div class="bean hero__bean-4">
+      </div> #}
+      <div class="bean hero__bean-3">
         <img src="{{ bean_2_path }}" alt="coffe bean">
       </div>
-
-      <div class="bean hero__bean-5">
+      <div class="bean hero__bean-4">
         <img src="{{ bean_3_path }}" alt="coffe bean">
       </div>
-
-      <div class="bean hero__bean-6">
+      <div class="bean hero__bean-5">
         <img src="{{ bean_4_path }}" alt="coffe bean">
       </div>
 
@@ -97,6 +92,17 @@
 {# Image with text 3 #}
   {% if content.field_image_with_text.2 %} 
   <div class="wide-content">
+  {# Beans #}
+    <div class="bean image-with-text-3__bean-1">
+      <img src="{{ bean_1_path }}" alt="coffe bean">
+    </div>
+    <div class="bean image-with-text-3__bean-2">
+      <img src="{{ bean_2_path }}" alt="coffe bean">
+    </div>
+    <div class="bean image-with-text-3__bean-3">
+      <img src="{{ bean_4_path }}" alt="coffe bean">
+    </div>
+
     {{ content.field_image_with_text.2 }}
   </div>
   {% endif %}
@@ -105,7 +111,20 @@
 {# Contact info #}
   <div class="content"> 
     <div class="contact">
-    <span id="contact"></span>
+      <span id="contact"></span>
+
+      {# Beans #}
+      <div class="bean contact__bean-1">
+        <img src="{{ bean_1_path }}" alt="coffe bean">
+      </div>
+      <div class="bean contact__bean-2">
+        <img src="{{ bean_2_path }}" alt="coffe bean">
+      </div>
+      <div class="bean contact__bean-3">
+        <img src="{{ bean_4_path }}" alt="coffe bean">
+      </div>
+
+    
       <div class="map">
         {% if content.field_map_title %} 
           {{ content.field_map_title }}
