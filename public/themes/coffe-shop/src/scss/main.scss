@@ -32,10 +32,11 @@
 
 // Content styling
 
+@use './content/navigation';
 @use './content/page';
 @use './content/image-with-text';
-@use './content/contact';
 @use './content/menu';
+@use './content/contact';
 
 // Media styling
 
