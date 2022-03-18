@@ -1,6 +1,5 @@
 <article{{ attributes }} >
 
-
 {# Hero #}
   <div class="content"> 
     <div class="hero">
@@ -24,8 +23,8 @@
     </div>
   </div>
 
-{# Image with text 1 #}
-    <div class="wide-content"{#  id="about" #}>
+{# Image with text 1 & 2 #}
+    <div class="wide-content">
     <span id="about"></span>
   {% if content.field_image_with_text %} 
       {{ content.field_image_with_text.0 }}
@@ -45,8 +44,7 @@
   </div>
 
 
-{# Image with text 2 #}
-
+{# Image with text 3 #}
   {% if content.field_image_with_text.2 %} 
   <div class="wide-content">
     {{ content.field_image_with_text.2 }}
@@ -56,7 +54,7 @@
 
 {# Contact info #}
   <div class="content"> 
-    <div class="contact" {# id="contact" #}>
+    <div class="contact">
     <span id="contact"></span>
       <div class="map">
         {% if content.field_map_title %} 

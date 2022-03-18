@@ -1,5 +1,5 @@
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav role="navigation" aria-labelledby="{{ heading_id }}" class="content">
+<nav role="navigation" aria-labelledby="{{ heading_id }}">
   {% block content %}
     {{ content }}
   {% endblock %}
