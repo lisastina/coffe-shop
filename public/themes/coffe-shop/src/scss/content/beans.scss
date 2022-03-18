@@ -130,8 +130,35 @@
       right: 5px;
     }
   }
-}
+  &-4 {
+    bottom: -77px;
+    left: 75px;
 
+    @include grid.media-breakpoint-up(tablet-landscape) {
+      bottom: -67px;
+      left: 75px;
+    }
+  }
+  &-5 {
+    bottom: -44px;
+    left: 16px;
+
+    @include grid.media-breakpoint-up(tablet-landscape) {
+      bottom: -30px;
+      left: -11px;
+    }
+  }
+  &-6 {
+    bottom: -111px;
+    left: 36px;
+
+    @include grid.media-breakpoint-up(tablet-landscape) {
+      bottom: -145px;
+      left: 36px;
+    }
+  }
+}
+/* 
 .image-with-text-3__bean {
   &-1 {
     top: -20px;
@@ -145,7 +172,7 @@
     top: 15px;
     left: 60px;
   }
-}
+} */
 
 .contact__bean {
   &-1 {
