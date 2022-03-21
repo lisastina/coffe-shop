@@ -19,7 +19,6 @@
   'src/assets/graphics/bean-4.png'
 ]|join('/') %}
 
-
       
 
 <article{{ attributes }} >
@@ -29,23 +28,20 @@
     <div class="hero">
 
       {# Beans #}
-      <div class="bean hero__bean-1">
-        <img src="{{ bean_1_path }}" alt="coffe bean">
+      <div class="bean wiggle hero__bean-1">
+        <img id="bean-1" src="{{ bean_1_path }}" alt="coffe bean">
       </div>
-      <div class="bean hero__bean-2">
-        <img src="{{ bean_2_path }}" alt="coffe bean">
+      <div class="bean wiggle hero__bean-2">
+        <img id="bean-2" src="{{ bean_2_path }}" alt="coffe bean">
       </div>
-{#       <div class="bean hero__bean-3">
-        <img src="{{ bean_3_path }}" alt="coffe bean">
-      </div> #}
-      <div class="bean hero__bean-3">
-        <img src="{{ bean_2_path }}" alt="coffe bean">
+      <div class="bean wiggle hero__bean-3">
+        <img id="bean-2" src="{{ bean_2_path }}" alt="coffe bean">
       </div>
-      <div class="bean hero__bean-4">
-        <img src="{{ bean_3_path }}" alt="coffe bean">
+      <div class="bean wiggle hero__bean-4">
+        <img id="bean-3" src="{{ bean_3_path }}" alt="coffe bean">
       </div>
-      <div class="bean hero__bean-5">
-        <img src="{{ bean_4_path }}" alt="coffe bean">
+      <div class="bean wiggle hero__bean-5">
+        <img id="bean-4" src="{{ bean_4_path }}" alt="coffe bean">
       </div>
 
       {% if content.field_subtitle_1 %} 
@@ -103,14 +99,14 @@
       <span id="contact"></span>
 
       {# Beans #}
-      <div class="bean contact__bean-1">
-        <img src="{{ bean_1_path }}" alt="coffe bean">
+      <div class="bean wiggle contact__bean-1">
+        <img id="bean-1" src="{{ bean_1_path }}" alt="coffe bean">
       </div>
-      <div class="bean contact__bean-2">
-        <img src="{{ bean_2_path }}" alt="coffe bean">
+      <div class="bean wiggle contact__bean-2">
+        <img id="bean-2" src="{{ bean_2_path }}" alt="coffe bean">
       </div>
-      <div class="bean contact__bean-3">
-        <img src="{{ bean_4_path }}" alt="coffe bean">
+      <div class="bean wiggle contact__bean-3">
+        <img id="bean-4" src="{{ bean_4_path }}" alt="coffe bean">
       </div>
 
     

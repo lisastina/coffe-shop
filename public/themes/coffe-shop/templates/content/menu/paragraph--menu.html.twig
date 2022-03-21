@@ -8,7 +8,7 @@
   active_theme_path(),
   'src/assets/graphics/bean-2.png'
 ]|join('/') %}
-{% set bean_3_path = [
+{% set bean_4_path = [
   url('<front>')|render|trim('/', 'right'),
   active_theme_path(),
   'src/assets/graphics/bean-4.png'
@@ -18,14 +18,14 @@
   <div{{ attributes }} class="menu">
     <span id="menu"></span>
 
-    <div class="bean menu__bean-1"> 
-      <img src="{{ bean_1_path }}" alt="coffe bean">
+    <div class="bean wiggle menu__bean-1"> 
+      <img id="bean-1" src="{{ bean_1_path }}" alt="coffe bean">
     </div>
-    <div class="bean menu__bean-2"> 
-      <img src="{{ bean_2_path }}" alt="coffe bean">
+    <div class="bean wiggle menu__bean-2"> 
+      <img id="bean-2" src="{{ bean_2_path }}" alt="coffe bean">
     </div>
-    <div class="bean menu__bean-3"> 
-      <img src="{{ bean_3_path }}" alt="coffe bean">
+    <div class="bean wiggle menu__bean-3"> 
+      <img id="bean-4" src="{{ bean_4_path }}" alt="coffe bean">
     </div>
 
     {% if content.field_menu_image %}
@@ -45,14 +45,14 @@
     </div>
 
     {# Beans #}
-    <div class="bean menu__bean-4">
-      <img src="{{ bean_1_path }}" alt="coffe bean">
+    <div class="bean wiggle menu__bean-4">
+      <img id="bean-1" src="{{ bean_1_path }}" alt="coffe bean">
     </div>
-    <div class="bean menu__bean-5">
-      <img src="{{ bean_2_path }}" alt="coffe bean">
+    <div class="bean wiggle menu__bean-5">
+      <img id="bean-2" src="{{ bean_2_path }}" alt="coffe bean">
     </div>
-    <div class="bean menu__bean-6">
-      <img src="{{ bean_3_path }}" alt="coffe bean">
+    <div class="bean wiggle menu__bean-6">
+      <img id="bean-4" src="{{ bean_4_path }}" alt="coffe bean">
     </div>
   </div>
 {% endblock paragraph %}
