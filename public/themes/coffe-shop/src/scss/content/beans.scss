@@ -36,6 +36,7 @@
   width: 25px;
   height: 25px;
   z-index: 100;
+  cursor: pointer;
 
   @include grid.media-breakpoint-up(tablet-landscape) {
     width: 35px;
@@ -48,7 +49,6 @@
 
   &.wiggle:hover {
     animation: wiggle 1s both infinite;
-    cursor: pointer;
   }
   &.broken {
     width: 45px;
