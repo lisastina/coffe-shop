@@ -1,3 +1,4 @@
+{# Bean paths #}
 {% set bean_1_path = [
   url('<front>')|render|trim('/', 'right'),
   active_theme_path(),
@@ -17,6 +18,11 @@
   url('<front>')|render|trim('/', 'right'),
   active_theme_path(),
   'src/assets/graphics/bean-4.png'
+]|join('/') %}
+{% set coffegrinder_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/coffeegrinder.gif'
 ]|join('/') %}
 
       
@@ -136,6 +142,10 @@
           {% if content.field_address %} 
             {{ content.field_address }}
           {% endif %}
+
+          <div class="contact-info__image">
+            <img src="{{coffegrinder_path}}" alt="coffe grinder">
+          </div>
         </div>
       </div>
     </div>
