@@ -1,0 +1,24 @@
+
+{% block paragraph %}
+  <div{{ attributes }} class="menu-item">
+    <div class="menu-item__image-and-desc">
+      {% if content.field_product_img %}
+        {{ content.field_product_img }}
+      {% endif %}
+
+      <div class="menu-item__text">
+        {% if content.field_product_title %}
+          {{ content.field_product_title }}
+        {% endif %}
+
+        {% if content.field_product_desc %}
+          {{ content.field_product_desc }}
+        {% endif %}
+      </div>
+    </div>
+    {% if content.field_price %}
+      {{ content.field_price }}
+    {% endif %}
+
+  </div>
+{% endblock paragraph %}

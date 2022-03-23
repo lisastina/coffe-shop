@@ -1,0 +1,19 @@
+uuid: e141460e-1c0d-4c19-b868-670f96bc4bed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map_title
+    - node.type.startpage
+id: node.startpage.field_map_title
+field_name: field_map_title
+entity_type: node
+bundle: startpage
+label: 'Map title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

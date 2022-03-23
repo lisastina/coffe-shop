@@ -1,0 +1,58 @@
+{% set bean_1_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-1.png'
+]|join('/') %}
+{% set bean_2_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-2.png'
+]|join('/') %}
+{% set bean_4_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-4.png'
+]|join('/') %}
+
+{% block paragraph %}
+  <div{{ attributes }} class="menu">
+    <span id="menu"></span>
+
+    <div class="bean wiggle menu__bean-1"> 
+      <img id="bean-1" src="{{ bean_1_path }}" alt="coffe bean">
+    </div>
+    <div class="bean wiggle menu__bean-2"> 
+      <img id="bean-2" src="{{ bean_2_path }}" alt="coffe bean">
+    </div>
+    <div class="bean wiggle menu__bean-3"> 
+      <img id="bean-4" src="{{ bean_4_path }}" alt="coffe bean">
+    </div>
+
+    {% if content.field_menu_image %}
+      {{ content.field_menu_image }}
+    {% endif %}
+    
+    <div class="menu__border">
+      {% if content.field_menu_title %}
+        {{ content.field_menu_title }}
+      {% endif %}
+      
+      <div class="menu__items">
+        {% if content.field_product %}
+          {{ content.field_product }}
+        {% endif %}
+      </div>
+    </div>
+
+    {# Beans #}
+    <div class="bean wiggle menu__bean-4">
+      <img id="bean-1" src="{{ bean_1_path }}" alt="coffe bean">
+    </div>
+    <div class="bean wiggle menu__bean-5">
+      <img id="bean-2" src="{{ bean_2_path }}" alt="coffe bean">
+    </div>
+    <div class="bean wiggle menu__bean-6">
+      <img id="bean-4" src="{{ bean_4_path }}" alt="coffe bean">
+    </div>
+  </div>
+{% endblock paragraph %}

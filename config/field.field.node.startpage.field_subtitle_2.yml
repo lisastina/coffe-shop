@@ -1,0 +1,19 @@
+uuid: f255e65a-72d8-46cc-877e-1e3ede8f2904
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle_2
+    - node.type.startpage
+id: node.startpage.field_subtitle_2
+field_name: field_subtitle_2
+entity_type: node
+bundle: startpage
+label: 'Subtitle 2'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

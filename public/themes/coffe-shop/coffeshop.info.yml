@@ -1,0 +1,23 @@
+name: Coffeshop
+type: theme
+core_version_requirement: ^8.8 || ^9
+
+base theme: false
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer
+
+component-libraries:
+  coffeshop-components:
+    paths:
+      - components
+
+libraries:
+  - coffeshop/font.source-sans-pro
+  - coffeshop/icons.font-awesome
+  - coffeshop/global
+
+ckeditor_stylesheets:
+  - build/css/ckeditor.css

@@ -1,0 +1,52 @@
+uuid: ff3dd683-cc8e-48a9-8c10-2cadfa3b0840
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.menu_item.field_price
+    - field.field.paragraph.menu_item.field_product_desc
+    - field.field.paragraph.menu_item.field_product_img
+    - field.field.paragraph.menu_item.field_product_title
+    - paragraphs.paragraphs_type.menu_item
+  module:
+    - image
+id: paragraph.menu_item.default
+targetEntityType: paragraph
+bundle: menu_item
+mode: default
+content:
+  field_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_product_desc:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_product_img:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_product_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

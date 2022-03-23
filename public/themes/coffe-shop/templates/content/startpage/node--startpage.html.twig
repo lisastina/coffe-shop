@@ -1,0 +1,154 @@
+{# Bean paths #}
+{% set bean_1_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-1.png'
+]|join('/') %}
+{% set bean_2_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-2.png'
+]|join('/') %}
+{% set bean_3_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-3.png'
+]|join('/') %}
+{% set bean_4_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/bean-4.png'
+]|join('/') %}
+{% set coffegrinder_path = [
+  url('<front>')|render|trim('/', 'right'),
+  active_theme_path(),
+  'src/assets/graphics/coffeegrinder.gif'
+]|join('/') %}
+
+      
+
+<article{{ attributes }} >
+
+{# Hero #}
+  <div class="content"> 
+    <div class="hero">
+
+      {# Beans #}
+      <div class="bean wiggle hero__bean-1">
+        <img id="bean-1" src="{{ bean_1_path }}" alt="coffe bean">
+      </div>
+      <div class="bean wiggle hero__bean-2">
+        <img id="bean-2" src="{{ bean_2_path }}" alt="coffe bean">
+      </div>
+      <div class="bean wiggle hero__bean-3">
+        <img id="bean-2" src="{{ bean_2_path }}" alt="coffe bean">
+      </div>
+      <div class="bean wiggle hero__bean-4">
+        <img id="bean-3" src="{{ bean_3_path }}" alt="coffe bean">
+      </div>
+      <div class="bean wiggle hero__bean-5">
+        <img id="bean-4" src="{{ bean_4_path }}" alt="coffe bean">
+      </div>
+
+      {% if content.field_subtitle_1 %} 
+        {{ content.field_subtitle_1 }}
+      {% endif %}
+
+      {% if label %}
+        <h1{{ title_attributes }} class="hero__title" >
+        {{ label }}
+        </h1>
+      {% endif %}
+
+      {% if content.field_hero_image %} 
+        {{ content.field_hero_image }}
+      {% endif %}
+
+      {% if content.field_subtitle_2 %} 
+        {{ content.field_subtitle_2 }}
+      {% endif %}
+    </div>
+  </div>
+
+{# Image with text 1 & 2 #}
+    <div class="wide-content">
+    <span id="about"></span>
+  {% if content.field_image_with_text %} 
+      {{ content.field_image_with_text.0 }}
+  {% endif %}
+  {% if content.field_image_with_text.1 %} 
+    <div class="reverse">
+      {{ content.field_image_with_text.1 }}
+    </div>
+  {% endif %}
+    </div>
+
+{# Menu #}
+  <div class="content">
+    {% if content.field_menu %}
+      {{ content.field_menu }}
+    {% endif %}
+  </div>
+
+
+{# Image with text 3 #}
+  {% if content.field_image_with_text.2 %} 
+  <div class="wide-content">
+    {{ content.field_image_with_text.2 }}
+  </div>
+  {% endif %}
+
+
+{# Contact info #}
+  <div class="content"> 
+    <div class="contact">
+      <span id="contact"></span>
+
+      {# Beans #}
+      <div class="bean wiggle contact__bean-1">
+        <img id="bean-1" src="{{ bean_1_path }}" alt="coffe bean">
+      </div>
+      <div class="bean wiggle contact__bean-2">
+        <img id="bean-2" src="{{ bean_2_path }}" alt="coffe bean">
+      </div>
+      <div class="bean wiggle contact__bean-3">
+        <img id="bean-4" src="{{ bean_4_path }}" alt="coffe bean">
+      </div>
+
+    
+      <div class="map">
+        {% if content.field_map_title %} 
+          {{ content.field_map_title }}
+        {% endif %}
+        
+        {% if content.field_map %} 
+          {{ content.field_map }}
+        {% endif %}
+      </div>
+      <div>
+        {% if content.field_address_title %} 
+          {{ content.field_address_title }}
+        {% endif %}
+
+        <div class="contact-info">
+          {% if content.field_email %} 
+            {{ content.field_email }}
+          {% endif %}
+
+          {% if content.field_phone %} 
+            {{ content.field_phone }}
+          {% endif %}
+          
+          {% if content.field_address %} 
+            {{ content.field_address }}
+          {% endif %}
+
+          <div class="contact-info__image">
+            <img src="{{coffegrinder_path}}" alt="coffe grinder">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</article>

@@ -1,0 +1,19 @@
+uuid: 5d2499d7-fc6e-49f3-bb14-cbc4b264dd6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address_title
+    - node.type.startpage
+id: node.startpage.field_address_title
+field_name: field_address_title
+entity_type: node
+bundle: startpage
+label: 'Address title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

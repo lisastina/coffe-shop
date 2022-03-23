@@ -1,0 +1,5 @@
+{% if items %}
+  {% for item in items %}
+    <a{{ attributes }} href="mailto:{{ item.content }}">{{ item.content }}</a>
+  {% endfor %}
+{% endif %}

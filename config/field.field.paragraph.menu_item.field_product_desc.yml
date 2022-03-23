@@ -1,0 +1,19 @@
+uuid: 8858f774-0011-467f-bb8d-2e839fec489e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product_desc
+    - paragraphs.paragraphs_type.menu_item
+id: paragraph.menu_item.field_product_desc
+field_name: field_product_desc
+entity_type: paragraph
+bundle: menu_item
+label: 'Product description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

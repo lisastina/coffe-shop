@@ -1,0 +1,78 @@
+// General styling
+
+@use '../variables.scss';
+@use '../general/grid.scss' as grid;
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  color: variables.$font-color;
+  font-family: map-get(variables.$font-family, felt-tip);
+  font-size: variables.$font-size;
+  font-weight: variables.$font-weight;
+  background-color: variables.$beige;
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: variables.$brown;
+}
+
+h1 {
+  font-family: map-get(variables.$font-family, chelsea-open);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+
+  @include grid.media-breakpoint-up(tablet-landscape) {
+    margin-bottom: 8rem;
+  }
+}
+
+.wide-content {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+
+  @include grid.media-breakpoint-up(tablet-landscape) {
+    margin-bottom: 8rem;
+  }
+}
+
+.contact,
+.wide-content,
+.menu {
+  position: relative;
+}
+
+#about,
+#contact,
+#menu {
+  position: absolute;
+  top: -10px;
+
+  @include grid.media-breakpoint-up(tablet-landscape) {
+    top: -50px;
+  }
+}
