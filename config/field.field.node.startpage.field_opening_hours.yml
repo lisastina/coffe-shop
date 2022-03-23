@@ -1,0 +1,40 @@
+uuid: 3290b34c-2e2f-43c6-9b67-0317553b2ec2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opening_hours
+    - node.type.startpage
+    - paragraphs.paragraphs_type.opening_hours
+  module:
+    - entity_reference_revisions
+id: node.startpage.field_opening_hours
+field_name: field_opening_hours
+entity_type: node
+bundle: startpage
+label: 'Opening hours'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      opening_hours: opening_hours
+    negate: 0
+    target_bundles_drag_drop:
+      image_with_text:
+        weight: 5
+        enabled: false
+      menu:
+        weight: 6
+        enabled: false
+      menu_item:
+        weight: 7
+        enabled: false
+      opening_hours:
+        weight: 8
+        enabled: true
+field_type: entity_reference_revisions

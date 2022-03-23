@@ -44,7 +44,7 @@ p {
   margin: 0 auto 4rem;
 
   @include grid.media-breakpoint-up(tablet-landscape) {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
   }
 }
 

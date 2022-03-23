@@ -1,0 +1,12 @@
+{% if items %}
+  <div class="opening-hours">
+    <ul>
+      <h2>
+        {{ label }}
+      </h2>
+      {% for item in items %}
+        {{ item.content }}
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

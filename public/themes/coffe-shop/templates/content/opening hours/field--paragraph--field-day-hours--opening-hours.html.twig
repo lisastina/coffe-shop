@@ -1,0 +1,5 @@
+{% if items %}
+  {% for item in items %}
+    <li{{ attributes }}>{{ item.content }}</li>
+  {% endfor %}
+{% endif %}

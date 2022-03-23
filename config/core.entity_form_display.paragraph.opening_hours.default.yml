@@ -1,0 +1,23 @@
+uuid: f6f5c4a5-8cbf-428c-a02d-fc8ad2842bbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.opening_hours.field_day_hours
+    - paragraphs.paragraphs_type.opening_hours
+id: paragraph.opening_hours.default
+targetEntityType: paragraph
+bundle: opening_hours
+mode: default
+content:
+  field_day_hours:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

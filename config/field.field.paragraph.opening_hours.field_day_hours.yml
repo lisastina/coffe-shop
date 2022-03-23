@@ -1,0 +1,21 @@
+uuid: c2726129-d853-45ba-84b6-6ee31d426901
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_day_hours
+    - paragraphs.paragraphs_type.opening_hours
+id: paragraph.opening_hours.field_day_hours
+field_name: field_day_hours
+entity_type: paragraph
+bundle: opening_hours
+label: 'Day and hours'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Monday - thursday: 10:00 - 19:00'
+default_value_callback: ''
+settings: {  }
+field_type: string
