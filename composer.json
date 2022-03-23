@@ -25,6 +25,8 @@
         "drupal/core-project-message": "^9.0",
         "drupal/core-recommended": "^9.0",
         "drupal/paragraphs": "^1.13",
+        "drupal/tome": "^1.6",
+        "drupal/tome_netlify": "1.x-dev",
         "oddhill/oddprofile": "^2.0",
         "vlucas/phpdotenv": "^5.0"
     },
